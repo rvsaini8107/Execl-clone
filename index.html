@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Excel Clone</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">Book-1 Excel</div>
+        <div class="menu-bar">
+            <div class="menu-item menu-file">File</div>
+            <div class="menu-item menu-home selected">Home</div>
+            <div class="menu-item menu-insert">Insert</div>
+            <div class="menu-item menu-layout">Layout</div>
+            <div class="menu-item menu-help">Help</div>
+        </div>
+        <div class="menu-icon-bar">
+            <div class="material-symbols-rounded menu-icon icon-cut">content_cut</div>
+            <div class="material-symbols-rounded menu-icon icon-copy">content_copy</div>
+            <div class="material-symbols-rounded menu-icon icon-paste">content_paste</div>
+            <select id="" class="selector font-family-selector">
+                <option style="font-family: Noto Sans;" value="Noto Sans" >Noto Sans</option>
+                <option style="font-family:Arial" value="Arial" selected>Arial</option>
+                <option style="font-family:Calibri" value="Calibri">Calibri</option>
+                <option style="font-family:Comic Sans MS" value="Comic Sans MS">Comic Sans MS</option>
+                <option style="font-family:Courier New" value="Courier New">Courier New</option>
+                <option style="font-family:Impact" value="Impact">Impact</option>
+                <option style="font-family:Georgia" value="Georgia">Georgia</option>
+                <option style="font-family:Garamond" value="Garamond">Garamond</option>
+                <option style="font-family:Lato" value="Lato">Lato</option>
+                <option style="font-family:Open Sans" value="Open Sans">Open Sans</option>
+                <option style="font-family:Palatino" value="Palatino">Palatino</option>
+                <option style="font-family:Verdana" value="Verdana">Verdana</option>
+            </select>
+            <select id="" class="selector font-size-selector">
+                <option value="10px">10</option>
+                <option value="12px" selected>12</option>
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+                <option value="22px">22</option> 
+                <option value="24px">24</option>
+                <option value="26px">26</option>
+                <option value="28px">28</option>
+                <option value="30px">30</option>
+                <option value="32px">32</option>
+                
+            </select>
+            <div class="material-symbols-rounded menu-icon icon-bold style-icon">format_bold</div>
+            <div class="material-symbols-rounded menu-icon icon-italic style-icon">format_italic</div>
+            <div class="material-symbols-rounded menu-icon icon-underlined style-icon">format_underlined</div>
+
+            <div class="material-symbols-rounded menu-icon icon-align-left align-icon selected">format_align_left</div>
+            <div class="material-symbols-rounded menu-icon icon-align-center align-icon">format_align_center</div>
+            <div class="material-symbols-rounded menu-icon icon-align-right align-icon">format_align_right</div>
+            <div class="menu-icon icon-color-fill">
+                <input type="color" class="color-picker background-color-picker" id="" value="white">
+                <div class="material-symbols-rounded menu-icon color-fill-icon">format_color_fill</div>
+            </div>
+            <div class="menu-icon icon-color-text">
+                <input type="color" class="color-picker text-color-picker" id="" value="black">
+                <div class="material-symbols-rounded menu-icon color-fill-text">format_color_text</div>
+            </div>
+            
+        </div>
+        <div class="formula-bar">
+            <div class="formula-editor selectod-cell"></div>
+            <div class="function-sign material-symbols-rounded">function</div>
+            <div class="formula-editor formula-input" contenteditable="true"></div>
+        </div>
+        <div class="data-container">
+            <div class="select-all"></div>
+            <div class="column-name-container">
+                <!-- <div class="column-name colId-1" id="colCod-A">A</div>
+                <div class="column-name colId-2" id="colCod-B">B</div> -->
+            </div>
+            <div class="row-name-container">
+                <!-- <div class="row-name">1</div>
+                <div class="row-name">2</div> -->
+            </div>
+            <div class="input-cell-container">
+                <!-- <div class="cell-row">
+                    <div class="input-cell" contenteditable="true" id="row-1-col-1 " data="code-A"></div>
+                    <div class="input-cell" contenteditable="true"></div>
+                                       
+                </div>
+                <div class="cell-row">
+                    <div class="input-cell" contenteditable="true"></div>
+                    <div class="input-cell" contenteditable="true"></div>
+                                       
+                </div> -->
+            </div>
+        </div>
+        <div class="sheet-bar">
+            <div class="scroller">
+                <div class="material-symbols-rounded icon-left-scroll">
+                    arrow_left
+                </div>
+                <div class="material-symbols-rounded icon-right-scroll">
+                    arrow_right
+                </div>
+            </div>
+            <div class="material-symbols-rounded icon-add">
+                add_circle 
+            </div>
+            <div class="sheet-tab-container">
+                <div class="sheet-tab selected">Sheet1</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
